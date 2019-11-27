@@ -1,17 +1,8 @@
-<html lang="en">
-<head>
-<title>Gridcalendar test</title>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="gridcalendar.js"></script>
 <link rel="stylesheet" type="text/css" href="gridcalendar.css" />
-
-</head>
-<body>
-
-<main>
-
-
 
 <div id="cal" style="border: 1px solid black; background: #aab; width:10em;cursor: pointer">----------</div>
 ^^ Click this box
@@ -26,7 +17,10 @@
 <br/>
 <hr/>
 <br/>
-<h1><a href="https://github.com/quartertone/gridcalendar">Gridcalendar</a></h1>
+
+<a href="https://github.com/quartertone/gridcalendar">https://github.com/quartertone/gridcalendar</a>
+<br/>
+
 Customizable Javascript calendar with Promise<br/>
 by quartertone<br/>
 <br/>
@@ -55,8 +49,6 @@ gridcal(startdate, [title], [calendarID])<br/>
 Returns a Promise that contains the selected date in the result.<br/><br/>
 
 Resulting date is formatted Y-MM-DD (eg - 2019-05-28)<br/><br/>
-
-<a href="https://github.com/quartertone/gridcalendar">https://github.com/quartertone/gridcalendar</a><br/><br/>
 
 
 <script type="text/javascript">
