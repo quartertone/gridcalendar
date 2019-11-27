@@ -74,14 +74,14 @@ try {
 	var datethings = document.querySelectorAll("input[type='date']");
 
 	for (i = 0; i < datethings.length; i++) {
-		let newthing = document.createElement("div");
-		newthing.innerHTML = moment().format("ll");
-		datethings[i].parentElement.insertBefore(newthing, datethings[i]);
-		datethings[i].parentElement.removeChild(datethings[i]);
+		//let newthing = document.createElement("div");
+		//newthing.innerHTML = moment().format("ll");
+		//datethings[i].parentElement.insertBefore(newthing, datethings[i]);
+		//datethings[i].parentElement.removeChild(datethings[i]);
 		//replace date input with DIVs
 
 
-		newthing.onclick = function(e) {
+		datethings[i].onclick = function(e) {
 			e.preventDefault();
 			gridcal(this.innerHTML).then(function(result) {
 				console.log("PROMISE RESULT", result);
