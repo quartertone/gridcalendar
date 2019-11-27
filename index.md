@@ -29,14 +29,14 @@ Requires Moment.JS: <a href="https://momentjs.com/">https://momentjs.com/</a>
 
 <h2>USAGE:</h2>
 
-<code>
-gridcal(startdate, [title], [calendarID])<br/>
-  .then(function (result) {<br/>
-		// do someting with result<br/>
-		console.log("PROMISE RESULT", result);<br/>
-		document.getElementById("target").innerHTML = moment(result).format("ll");<br/>
-	});<br/>
-</code>
+<pre>
+gridcal(startdate, [title], [calendarID])
+  .then(function (result) {
+		// do someting with result
+		console.log("PROMISE RESULT", result);
+		document.getElementById("target").innerHTML = moment(result).format("ll");
+	});
+</pre>
 
 <br/><br/>
 
