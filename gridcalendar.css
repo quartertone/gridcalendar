@@ -67,7 +67,6 @@
 	line-height: 2em;
 	cursor: pointer;
 	font-weight: normal;
-	font-size: 95%;
 	margin:0; padding:0;
 }
 
@@ -80,13 +79,11 @@
 }
 
 .floatingcal .calcaption {
-	font-size: 70%;
 	text-align: center;
 	color: #fff;
 }
 
 .floatingcal .calmonthheader {
-	font-size: 70%;
 	width: auto;
 }
 
