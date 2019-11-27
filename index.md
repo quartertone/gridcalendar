@@ -12,7 +12,7 @@
 <input type="date" /><br/>
 <input type="date" /><br/>
 <input type="date" /><br/>
-^^ or try these.
+^^ or try these
 
 <br/>
 <hr/>
