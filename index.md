@@ -5,14 +5,14 @@
 <link rel="stylesheet" type="text/css" href="gridcalendar.css" />
 
 <div id="cal" style="border: 1px solid black; background: #aab; width:10em;cursor: pointer">----------</div>
-^^ Click this box
+^^ Click this box.
 
 <br/>
 <br/>
 <input type="date" /><br/>
 <input type="date" /><br/>
 <input type="date" /><br/>
-^^ or try these boxes
+^^ or try these.
 
 <br/>
 <hr/>
