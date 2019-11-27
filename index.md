@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-<title>Test Page</title>
+<title>Gridcalendar test</title>
 
 
 </head>
