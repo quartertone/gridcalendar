@@ -83,7 +83,7 @@ try {
 
 		datethings[i].onclick = function(e) {
 			e.preventDefault();
-			gridcal(this.innerHTML).then(function(result) {
+			gridcal(e.target.value).then(function(result) {
 				console.log("PROMISE RESULT", result);
 				e.target.value = moment(result).format("ll");
 			});
