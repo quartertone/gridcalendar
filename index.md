@@ -56,19 +56,17 @@ Resulting date is formatted Y-MM-DD (eg - 2019-05-28)<br/><br/>
 <h3>Example:</h3>
 <code style="display:block;white-space:pre-wrap;background:#eeee;">&lt;!-- Don't forget to include Moment JS --&gt;
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"&gt;&lt;/script&gt;
-
+<br/>
 &lt;script src="gridcalendar.js"&gt;&lt;/script&gt;
-
+<br/>
 &lt;link rel="stylesheet" type="text/css" href="gridcalendar.css" /&gt;
-
+<br/>
 &lt;body&gt;
-
-
+<br/>
 &lt;div id="cal"&gt;----&lt;/div&gt;
-
-
+<br/>
 &lt;script type="text/javascript"&gt;
-
+<br/>
 document.getElementById("cal").onclick = function(e) {
   e.preventDefault();
     gridcal(this.innerHTML).then(function(result) {
@@ -76,10 +74,9 @@ document.getElementById("cal").onclick = function(e) {
     	e.target.innerHTML = moment(result).format("LL");
 	});
 };
-
+<br/>
 &lt;/script&gt;
-
-
+<br/>
 [...]
 </code>
 
