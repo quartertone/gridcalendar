@@ -85,7 +85,7 @@ try {
 			e.preventDefault();
 			gridcal(this.innerHTML).then(function(result) {
 				console.log("PROMISE RESULT", result);
-				e.target.innerHTML = moment(result).format("ll");
+				e.target.value = moment(result).format("ll");
 			});
 		};
 
