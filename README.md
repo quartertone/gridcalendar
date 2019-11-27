@@ -5,6 +5,10 @@ Requires Moment.JS: https://momentjs.com/
 
 
 USAGE:
+
+Plug and play!
+Just inlude the script and css files along with moment.js, and that's all the setup you need.
+
 ```
 gridcal(startdate, [title], [calendarID])
 	.then(function (result) {
