@@ -94,12 +94,6 @@ try {
 } catch (e) {}
 
 
-/* */
-
-
 
 </script>
 
-</main>
-</body>
-</html>
