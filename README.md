@@ -25,9 +25,7 @@ gridcal(startdate, [title], [calendarID])
 `calendarID`: optional ID, if you want to perform other styling or javascript manipulation to the calendar.
 
 
-Returns a Promise that contains the selected date in the result.
-
-Resulting date is formatted Y-MM-DD (eg - 2019-05-28)
+Returns a Promise result that contains the selected date as a String with the format Y-MM-DD (eg - 2019-05-28)
 
 
 See the <a href="https://quartertone.github.io/gridcalendar/">DEMO</a>
