@@ -10,7 +10,7 @@ gridcal(startdate, [title], [calendarID])
 	.then(function (result) {
 		// do someting with result
 		console.log("PROMISE RESULT", result);
-		document.getElementById("target").innerHTML = moment(result).format("ll");
+		document.getElementById("target").innerHTML = result;
 	});
 ```
 
