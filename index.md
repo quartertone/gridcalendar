@@ -10,36 +10,54 @@
 <body>
 
 <main>
-<pre>
-Customizable Javascript calendar with Promise
 
-Requires Moment.JS: https://momentjs.com/
 
-USAGE:
+
+<div id="cal" style="border: 1px solid black; background: #aab; width:10em;cursor: pointer">----------</div>
+^^ Click this box
+
+<br/>
+<br/>
+<input type="date" /><br/>
+<input type="date" /><br/>
+<input type="date" /><br/>
+^^ or try these boxes
+
+<br/>
+<hr/>
+<br/>
+<h1><a href="https://github.com/quartertone/gridcalendar">Gridcalendar</a></h1>
+Customizable Javascript calendar with Promise<br/>
+by quartertone<br/>
+<br/>
+Requires Moment.JS: <a href="https://momentjs.com/">https://momentjs.com/</a>
+<br/><br/>
+
+<h2>USAGE:</h2>
+
 <code>
-gridcal(startdate, [title], [calendarID])
-	.then(function (result) {
-		// do someting with result
-		console.log("PROMISE RESULT", result);
-		document.getElementById("target").innerHTML = result;
-	});
-	</code>
-startdate: Date string in any format that is compatible with moment.js parser
+gridcal(startdate, [title], [calendarID])<br/>
+  .then(function (result) {<br/>
+		// do someting with result<br/>
+		console.log("PROMISE RESULT", result);<br/>
+		document.getElementById("target").innerHTML = moment(result).format("ll");<br/>
+	});<br/>
+</code>
 
-title: optional title to put at the top of the calendar.
+<br/><br/>
 
-calendarID: optional ID, if you want to perform other styling or javascript manipulation to the calendar.
+<code>startdate</code>: Date string in any format that is compatible with moment.js parser<br/><br/>
 
-Returns a Promise that contains the selected date in the result.
+<code>title</code>: optional title to put at the top of the calendar.<br/><br/>
 
-Resulting date is formatted Y-MM-DD (eg - 2019-05-28)
-</pre>
+<code>calendarID</code>: optional ID, if you want to perform other styling or javascript manipulation to the calendar.<br/><br/>
 
-<div id="cal">----------</div>
+Returns a Promise that contains the selected date in the result.<br/><br/>
 
-<br/>
-<br/>
-<input type="date" />
+Resulting date is formatted Y-MM-DD (eg - 2019-05-28)<br/><br/>
+
+<a href="https://github.com/quartertone/gridcalendar">https://github.com/quartertone/gridcalendar</a><br/><br/>
+
 
 <script type="text/javascript">
 
