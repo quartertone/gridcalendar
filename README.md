@@ -11,11 +11,10 @@ Just include the script and css files along with moment.js, and that's all the s
 
 ```
 gridcal(startdate, [title], [calendarID])
-	.then(function (result) {
-		// do someting with result
-		console.log("PROMISE RESULT", result);
-		document.getElementById("target").innerHTML = result;
-	});
+  .then(function (result) {
+    // do someting with result
+    console.log("PROMISE RESULT", result);
+});
 ```
 
 `startdate`: Date string in any format that is compatible with moment.js parser
