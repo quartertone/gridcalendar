@@ -9,16 +9,13 @@ Requires Moment.JS: https://momentjs.com/
 
 
 USAGE:
-
-
-<code>
+```
 gridcal(startdate,[title], [calendarID]).then(function (result) {
 	// do someting with result
 	console.log("PROMISE RESULT", result);
 	document.getElementById("target").innerHTML = moment(result).format("ll");
 });
-</code>
-
+```
 startdate: Date string in any format that is compatible with moment.js parser
 
 title: optional title to put at the top of the calendar.
