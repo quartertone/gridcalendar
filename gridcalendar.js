@@ -1,4 +1,5 @@
 /*
+https://github.com/quartertone/gridcalendar
 Customizable Javascript calendar with Promise
 by quartertone
 
@@ -15,14 +16,15 @@ gridcal(startdate, [title], [calendarID])
 
 
 startdate: Date string in any format that is compatible with moment.js parser
+
 title: optional title to put at the top of the calendar.
+
 calendarID: optional ID, if you want to perform other styling or javascript manipulation to the calendar.
 
+Returns a Promise that contains the selected date in the result.
 
-Returns a PROMISE that contains the selected date in the result.
+Resulting date is formatted Y-MM-DD (eg - 2019-05-28)
 
-Resulting date is formatted Y-MM-DD
-	
 */
 
 
@@ -58,7 +60,19 @@ function gridcal(initdate = null, title = "-GRIDCAL-", calendarboxname = null) {
 		var firstday = moment(caldate).date(1);
 		var firstdaynum = firstday.day(); //sunday = 0
 		var d = 0;
-		var outText = '<div class="floatingcal">' + `<div class="calcaption">${title}<br/>${firstday.year()}</div>` + `<div class="calbtns" id="calwayback">&lt;&lt;</div>` + `<div class="calbtns" id="callittleback">&lt;</div>` + `<div class="calbtns" id="calmonthheader">${firstday.format("MMMM")}</div>` + `<div class="calbtns" id="callittlefwd">&gt;</div>` + `<div class="calbtns" id="calwayfwd">&gt;&gt;</div>`;
+		var outText = '<div class="floatingcal">'
+			+ `<div class="calcaption">${title}<br/>${firstday.year()}</div>`
+			+ `<div class="calbtns" id="calwayback">&lt;&lt;</div>`
+			+ `<div class="calbtns" id="callittleback">&lt;</div>`
+			+ `<div class="calbtns" id="calmonthheader">${firstday.format("MMMM")}</div>`
+			+ `<div class="calbtns" id="callittlefwd">&gt;</div>`
+			+ `<div class="calbtns" id="calwayfwd">&gt;&gt;</div>`;
+			
+		
+		for (let wkday = 0; wkday < 7; wkday++) {
+			outText += '<div class="wkday">' + moment().day(wkday).format("dd") + '</div>';
+		}
+
 		for (let cell = 0; cell <= 35; cell++) {
 			if (cell < firstdaynum) {
 				outText += "<div></div>";
